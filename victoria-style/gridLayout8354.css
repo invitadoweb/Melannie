@@ -1,0 +1,45 @@
+#grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 5%;
+}
+
+#grid .title h2{
+    font-size: 40px;
+}
+  
+#grid .container-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2%;
+}
+  
+
+#grid .column {
+    flex: 0 0 calc(33.33% - 2%);
+}
+  
+#grid .column.full-width {
+    flex-basis: 100%;
+}
+
+#grid .dos-fotos {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 49% 49%;
+    row-gap: 2%;
+    margin-bottom: -1%;
+}
+  
+#grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10%;
+    -webkit-box-shadow: 1vw 1vw 1vw 0px rgba(0, 0, 0, 0.3); 
+    box-shadow: 1vw 1vw 1vw 0px rgba(0, 0, 0, 0.3);
+    border-radius: 5%;
+}

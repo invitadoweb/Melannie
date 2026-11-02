@@ -1,0 +1,312 @@
+/* ESTILO LIDIA ROJO */
+:root{
+    --color-principal: rgb(255, 239, 245);
+    --color-elementos: rgb(255, 215, 231);    
+
+    /* NOMBRE */
+    --nombre-color: #ffffff;
+    --nombre-fondo:rgba(0, 0, 0, 0.185);
+    --boder-hero: 0.5vw solid rgb(255, 255, 255);
+
+    /* FECHA */
+    --fecha-color:white;
+    --fecha-texto-sombra: 0.4vw 0.4vw 1vw rgba(0, 0, 0, 0.4), 0.4vw 0.4vw 1vw rgba(0, 0, 0, 0.4), -0.5vw -0.5vw 1vw rgba(0, 0, 0, 0.4), -0.5vw -0.5vw 1w rgba(0, 0, 0, 0.5), 0.6vw 0.6vw 1vw rgba(0, 0, 0, 0.5) !important;
+    
+    /* SUBTITULOS */
+    --subtitulos-color: #ffffff;
+    --subtitulos-size: 9vw;
+
+    /* TEXTOS CONTENIDO*/
+    --texto-color: rgb(255, 255, 255);
+    --texto-sombra: 0.4vw 0.4vw 0.5vw rgba(0, 0, 0, 0.3), 0.4vw 0.4vw 0.5vw rgba(0, 0, 0, 0.3), -0.3vw -0.3vw 0.5vw rgba(0, 0, 0, 0.3), -0.4vw -0.4vw 0.6vw rgba(0, 0, 0, 0.2), 0.6vw 0.6vw 0.6vw rgba(0, 0, 0, 0.1) !important;
+    
+    
+    /* BOTONES */
+    --button-background-color: #d50f12c9;
+    --button-text-color: #fff;
+
+    /* SOBRE */
+    --color-sobre: #C52A2D;
+    --text-sello-shadow1: #961d1f9a;
+    --text-sello-shadow2: #7e141691;
+    --line-sobre: #9b1c1e;
+    --sobre-text-color: #e0e0e0;
+    --sobre-text-shadow:1px 1px 6px rgba(0, 0, 0, 0.212), 4px 4px 6px rgba(0, 0, 0, 0.281), 8px 8px 11px rgba(0, 0, 0, 0.233), 22px 22px 20px rgba(0, 0, 0, 0.185), -2px -2px 5px rgba(0,0,0,0.2), 2px 2px 5px rgba(0, 0, 0, 0.096) !important;
+    --sobre-porcentaje: 3.2%;
+
+
+    /* ITINERARIO */
+    --itinerario-background:rgba(104, 0, 0, 0.3);   
+    --invertir-img-itinerario: invert(100%);
+
+    /* FOOTER */
+    --footer-background-color: var(--button-background-color);
+    --footer-text-color: #fff;
+}
+
+/* MARK: FOTOS INTERMEDIAS */
+.nombre{
+    color: var(--nombre-color) !important;
+    background: var(--nombre-fondo);
+    border-color: var(--boder-nombre-color);
+    border-radius: 5px;
+}
+
+.segment{
+    background: var(--nombre-fondo);
+}
+
+.subtitulo{
+    font-size: var(--subtitulos-size) !important;
+    color: var(--subtitulos-color);
+    text-shadow: var(--texto-sombra) !important; 
+}
+
+/* MARK: SUBTITULOS */
+/* @font-face {
+    font-family: 'Italiana';
+    src: url('/media/fonts/Italiana/Italiana-Regular.ttf') format('truetype');
+
+} */
+
+
+body{
+    background: url(../media/fondos/rojo.jpg);
+    animation: moveBackground2 50s infinite;
+    /* backdrop-filter: blur(3px); */
+    position: relative;
+}
+
+/* MARK: ITINERARIO;*/
+.invertir-img-itinerario{
+    filter: var(--invertir-img-itinerario);
+}
+
+.itinerario .evento{
+    background: var(--itinerario-background);
+    
+}
+.itinerario .evento .icono .circulo{
+    background-color: transparent;
+}
+
+/* MARK: HERO;*/
+.hero-container .nombre {
+    border: var(--boder-hero) !important;
+    width: 90%;
+    height: fit-content;
+    text-align: center;
+    font-size: 14vw;
+    margin-bottom: -5%;
+}
+
+/* MARK: TEXTOS;*/
+
+h2{
+    font-family: 'Mangoline';
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.9), 1px 1px 1px rgba(0,0,0,0.5), 3px 3px 3px rgba(0,0,0,0.75), 3px 3px 3px rgba(0,0,0,0.4), -2px -2px 5px rgba(0,0,0,0.2), 1px 1px 1px rgba(0,0,0,0.2) !important;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.nombre-titulo{
+    font-family: 'DancingScript';
+    line-height: 0.8;
+    font-size: 14vw;
+    padding: 20px;
+    font-weight: 600;
+}
+h3{
+    font-family: 'Oswald' !important;
+    text-transform: lowercase;
+    text-shadow: var(--texto-sombra) !important; 
+    letter-spacing: 4px;
+
+    /* text-shadow: none; */
+}
+
+h4{
+    text-shadow: var(--texto-sombra) !important; 
+    background: transparent !important;
+}
+
+.contain .familiares .vector-long {
+    margin-top: 2% !important;
+}
+
+.mensaje {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 2vw;
+    padding: 2vw;
+    width: 70%;
+    height: 3em; /* Ajusta la altura segÃºn tus necesidades */
+    border: 0.4vw solid var(--button-background-color);
+    resize: none; /* Permite al usuario ajustar la altura si lo desea */
+}
+
+.texto{
+    color: var(--texto-color) !important;
+    font-family: 'DM Sans' !important;
+    text-shadow: var(--texto-sombra) !important; 
+}
+.frase-container .texto{
+    font-family: 'DM Serif' !important;
+}
+#fecha{
+    text-transform: uppercase;
+    margin-bottom: -3%;
+}
+.countdown-container .segment span{
+    font-family: 'Oswald' !important;
+    font-size: 4.5vw !important;
+    
+}
+.countdown-container .segment .number{
+    font-family: 'Oswald';
+    font-size: 7vw !important;
+    
+}
+
+.direccion,.hora, .nombre{
+    text-shadow: var(--texto-sombra) !important;  
+}
+
+.countdown-container .segment{
+   border-radius: 5px;
+   border: var(--boder-hero) !important;
+   width: 90px;
+   height: 90px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0.5vw;
+   padding: 2px;
+   margin-top: 10%;
+}
+
+.footer{
+    background-color: var(--footer-background-color);
+    width: 100%;
+    margin-top: 10%;
+    color: var(--footer-text-color);
+    border-radius: 0;
+}
+
+.itinerario .evento .item .nombre {
+    backdrop-filter: none;
+}
+
+.itinerario .evento .item .hora {
+    backdrop-filter: none;
+}
+
+/* MARK: Sobre */
+.sobre{
+    top:0;
+}
+
+.sobre .first {
+    background-color: var(--color-sobre) !important;
+    border-bottom: var(--line-sobre) solid 1px !important;
+    top:0;
+    height: var(--sobre-porcentaje);
+
+}
+
+.sobre .second {
+    background-color: var(--color-sobre) !important;
+    border-top: var(--line-sobre) solid 1px !important;
+    top: 0;
+    height: 100%;
+    transform: translateY(var(--sobre-porcentaje));
+}
+
+.sello {
+    background: var(--color-sobre) !important;
+    border: none;
+    color: var(--sobre-text-color);
+    font-size: 18px;
+    transition: .2s ease-in-out;
+    top:var(--sobre-porcentaje);
+    font-family: 'Italiana';
+    text-shadow: var(--sobre-text-shadow);
+    
+    box-shadow: -6px -6px 14px var(--text-sello-shadow1),
+        -6px -6px 10px var(--text-sello-shadow2),
+        6px 6px 8px rgba(255, 255, 255, .075),
+        6px 6px 10px rgba(0, 0, 0, .15);
+    -webkit-box-shadow: -6px -6px 14px var(--text-sello-shadow1),
+        -6px -6px 10px var(--text-sello-shadow2),
+        6px 6px 8px rgba(255, 255, 255, .075),
+        6px 6px 10px rgba(0, 0, 0, .15);
+
+}
+
+.down_1 {
+    /* animation: 3s down forwards; */
+    -webkit-animation-duration: 3s;
+    -webkit-animation-name: down1 !important;
+    -webkit-animation-fill-mode: forwards;
+}
+
+/* MARK: FOTOS INTERMEDIAS */
+
+.parallax-1{
+    background: url(fondos/1.jpg);
+    background-position: center;
+    background-size: cover;
+    clip-path: polygon(100% 100%, 51% 91%, 0 100%, 0% 100%, 0 0, 100% 0);
+}
+
+.parallax-2{
+    background: url(fondos/2.jpg);
+    background-position: bottom;
+    background-size: cover;
+    clip-path: polygon(100% 0, 100% 100%, 51% 90%, 0 100%, 0 0, 50% 8%);
+}
+
+.parallax-3{
+    background: url(fondos/1.jpg);
+    background-position: bottom;
+    background-size: cover;
+    clip-path: polygon(100% 0, 100% 100%, 51% 90%, 0 100%, 0 0, 50% 8%);
+
+}
+
+.parallax-4{
+    background: url(fondos/1.jpg);
+    background-position: bottom;
+    background-size: cover;
+    clip-path: polygon(100% 0, 100% 100%, 51% 90%, 0 100%, 0 0, 50% 8%);
+  
+}
+
+
+.parallax-5{
+    background: url(fondos/1.jpg);
+    background-position: bottom;
+    background-size: cover;
+    clip-path: polygon(100% 0, 100% 100%, 51% 90%, 0 100%, 0 0, 50% 8%);
+
+}
+
+#fecha{
+    color: var(--fecha-color);
+    text-shadow: var(--fecha-texto-sombra) !important;
+}
+
+@keyframes down1 {
+    0% {
+        transform: translateY(100%);
+    }
+
+    99% {
+        transform: translateY(200%);
+
+
+    }
+
+    100% {
+        display: none;
+    }
+}

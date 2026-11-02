@@ -1,0 +1,67 @@
+.lugar{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 5%;
+}
+
+.lugar .con-foto{
+    margin: auto;
+    width: 80%;
+    border-radius: 4%;
+}
+
+.lugar .sin-foto{
+    margin: auto;
+    width: 25%;
+}
+
+.lugar .nombre{
+    margin: auto;
+    font-size: 3vw;
+    font-weight: 700;
+    font-family: 'Bellefair';
+    font-family: 'Old Standard TT', serif;
+    margin-top: 3%;
+}
+
+.lugar .direccion{
+    margin: auto;
+    font-size: 3vw;
+    font-family: 'Bellefair';
+    margin-bottom: 2%;
+    margin-top:2%;
+    width: 90%;
+}
+
+.lugar .button{
+    margin: auto;
+    width: 18%;
+}
+
+.lugar .hora{
+    font-size: 4vw;
+    font-weight: 700;
+    font-family: 'Old Standard TT', serif;
+}
+
+@media (min-width:1100px) {
+    .lugar .button{
+        width: 20%;
+    }
+    .lugar .nombre{
+        font-size: 22px;
+    }
+    
+    .lugar .direccion{
+        font-size: 20px;
+    }
+
+    .lugar .hora{
+        font-size: 26px;
+    }
+}

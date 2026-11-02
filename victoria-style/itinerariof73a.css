@@ -1,0 +1,105 @@
+
+/* ITINERARIO */
+.itinerario{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.itinerario .evento{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    column-gap:10%;
+    margin-top: 3vw;
+    background: rgba(255, 255, 255, 0.066);
+    border-radius: 5vw;
+    padding: 2vw;
+    backdrop-filter: blur(1vw);
+}
+
+.itinerario .evento .icono{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.itinerario .evento .icono .circulo{
+    margin: auto;
+    width: 16vw;
+    height: 16vw;
+    border-radius: 50%;
+    background: #EEC980;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itinerario .evento .icono .circulo img{
+    margin: auto;
+    width: 60%;
+}
+
+.itinerario .evento .item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.itinerario .evento .item .nombre{
+    font-size: 5vw;
+    color: black;
+    font-family: 'Bellefair';
+    margin: auto;
+}
+
+.itinerario .evento .item .hora{
+    font-size: 4vw;
+    color: black;
+    font-weight: 900;
+    font-family: 'Old Standard TT', serif;
+    margin: auto;
+}
+
+@media (min-width:1100px){
+
+.itinerario{
+    width: 70%;
+    margin-top: 0%;
+}
+
+.itinerario .evento{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    column-gap: 50px;
+    margin-top: 8px;
+    border-radius: 15px;
+    padding: 8px;
+    backdrop-filter: blur(6px);
+}
+
+
+
+.itinerario .evento .icono .circulo{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+.itinerario .evento .icono .circulo img{
+    width: 60%;
+}
+
+
+.itinerario .evento .item .nombre{
+    font-size: 35px;
+}
+
+.itinerario .evento .item .hora{
+    font-size: 32px;
+} 
+}

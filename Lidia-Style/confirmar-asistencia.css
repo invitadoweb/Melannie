@@ -1,0 +1,122 @@
+.confirmacion-asistencia{
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+
+.confirmacion-asistencia form{
+    margin: auto;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-complete form{
+    row-gap: 5%;
+}
+
+.confirmacion-asistencia .texto{
+    font-size: 6vw;
+}
+
+
+.confirmacion-asistencia .familia-input{
+    border-radius: 2vw;
+    width: 70%;
+    border: 0.7vw solid var(--button-background-color);
+    margin-top: 1%;
+    padding: 0.7vw;
+    background: white;
+    color: black;
+    font-size: 4vw;
+}
+
+.confirmacion-asistencia .button{
+    font-size: 3vw;
+    border: none;
+    margin-top: 2%;
+    background-color: var(--button-background-color);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.1), 2px 2px 2px rgba(0,0,0,0.1),2px 2px 2px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    width: 40%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: none;
+    margin: auto;
+    text-decoration: none;
+    color: var( --button-text-color);
+}
+
+.confirmacion-asistencia select{
+    background-color: white;
+    color: black;
+    border-radius: 2vw;
+    font-size: 5vw;
+    text-align: center;
+    width: 70%;
+}
+
+#selects-asistencia{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+.confirmacion-options{
+    margin-top: 3vw;
+}
+
+.confirmacion-options div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2vw;
+}
+.button{
+        background-color: var(--button-background-color);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1), 2px 2px 2px rgba(0, 0, 0, 0.1), 2px 2px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    width: 80%;
+    height: 40px;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    text-shadow: none;
+    margin: auto;
+    text-decoration: none;
+    color: var(--button-text-color);
+}
+
+#familia-wrapper{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+#familia-wrapper input{
+    width: 80%;
+}
+.iti__selected-dial-code{
+    text-shadow: none;
+    color: #000;;
+}
+
+.container-complete{
+    margin-top: 5%;
+}
+.background {
+    margin-bottom:42vw !important;
+}

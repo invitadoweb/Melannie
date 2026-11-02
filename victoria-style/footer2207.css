@@ -1,0 +1,13 @@
+.footer{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc( 100% + -10px );
+    padding: 5px;
+    color: rgb(68, 68, 68);
+    border-bottom-left-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+
+}
+
